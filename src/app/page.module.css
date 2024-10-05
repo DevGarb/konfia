@@ -1,0 +1,38 @@
+
+.loading {
+  width: 88px;
+  height: 88px;
+  margin: 64px;
+}
+
+.loadingText {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  transition: transform 0.3s ease-in-out;
+  align-items: center;
+}
+
+.title:hover {
+  transform: scale(1.1) translateX(-2em);
+}
+
+.navbar {
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+  padding: 18px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
